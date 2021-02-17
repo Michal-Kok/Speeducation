@@ -165,6 +165,20 @@ html {
   }
 }
 
+@media screen and (min-height: 481px) and (max-height: 769px) and (min-width: 429px) and (max-width: 1024px) {
+  .nav__list {
+    -webkit-transform: translateX(-1200px);
+            transform: translateX(-1200px);
+  }
+  .nav__searchForm {
+    width: 30vh;
+    height: 6.6vh;
+    top: calc(50% - 3.3vh);
+    -webkit-transform: translateX(300px);
+            transform: translateX(300px);
+  }
+}
+
 .firstView {
   height: 90vh;
   width: 100%;
@@ -230,6 +244,34 @@ html {
     width: 60%;
     margin-bottom: 20vh;
     margin-top: 5vh;
+  }
+}
+
+@media screen and (min-height: 481px) and (max-height: 769px) and (min-width: 429px) and (max-width: 1024px) {
+  .firstView {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-left: 10vw;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .firstView__svgCornerContainer {
+    width: 25vh;
+    height: 25vh;
+  }
+  .firstView__logoContainer {
+    width: 25%;
+  }
+  .firstView__header {
+    font-size: 3.6em;
+    text-align: left;
+  }
+  .firstView__button {
+    font-size: 1em;
+    padding: 15px 25px;
+    margin-bottom: 20px;
   }
 }
 
@@ -310,6 +352,38 @@ html {
 @media screen and (min-height: 310px) and (max-height: 480px) and (max-width: 768px) and (orientation: landscape) {
   .secondView {
     padding: 30px 18%;
+  }
+}
+
+@media screen and (min-height: 481px) and (max-height: 769px) and (min-width: 429px) and (max-width: 1024px) {
+  .cardsContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .card:nth-child(even) {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .card {
+    width: 40%;
+  }
+  .card__img {
+    width: calc(.15% * 640);
+    height: calc(.15% * 427);
+  }
+  .card__title {
+    font-size: 1.7em;
+  }
+  .card__desc {
+    font-size: 1.1em;
+  }
+  .card__btn {
+    font-size: 1em;
   }
 }
 

@@ -56,3 +56,32 @@
     }
 
 }
+
+@media screen and (min-height : 481px) and (max-height : 769px) and (min-width : 429px) and (max-width : 1024px) {
+    .firstView {
+        align-items: flex-start;
+        padding-left: 10vw;
+        justify-content: space-evenly;
+
+        &__svgCornerContainer {
+            width: 25vh;
+            height: 25vh;
+        }
+
+        &__logoContainer {
+            width: 25%;
+        }
+
+        &__header {
+            font-size: 3.6em;
+            text-align: left;
+        }
+
+        &__button {
+            font-size: 1em;
+            padding: 15px 25px;
+            margin-bottom: 20px;
+        }
+
+    }
+}
