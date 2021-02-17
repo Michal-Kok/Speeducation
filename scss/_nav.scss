@@ -104,20 +104,20 @@
 
 }
 
-// @media screen and (min-height : 310px) and (max-height : 480px) and (max-width : 768px) and (orientation: landscape) {
-//     .nav {
-//         height: 15vh;
+@media screen and (min-height : 310px) and (max-height : 480px) and (max-width : 768px) and (orientation: landscape) {
+    .nav {
+        height: 15vh;
 
-//         &__list {
-//             transform: translateX(-800px);
-//         }
+        &__list {
+            transform: translateX(-800px);
+        }
 
-//         &__searchForm {
-//             width: 40vh;
-//             height: 9vh;
-//             top: calc(50% - 4.5vh)
-//         }
+        &__searchForm {
+            width: 40vh;
+            height: 9vh;
+            top: calc(50% - 4.5vh)
+        }
 
 
-//     }
-// }
+    }
+}
