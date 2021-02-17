@@ -1,0 +1,123 @@
+.nav {
+    height: 10vh;
+    width: 100vw;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+
+    &__list {
+        transform: translateX(-400px);
+        display: flex;
+        height: 100%;
+        width: 100%;
+        padding-left: 15%;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style: none;
+        align-items: center;
+        transition: .3s;
+        transition-delay: .3s;
+    }
+
+    &__item {
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+    }
+
+    &__button {
+        @include basicButton();
+
+        &--search {
+            position: absolute;
+            top: 50%;
+            right: 5%;
+            transform: translateY(-50%);
+
+
+            & i {
+                font-size: $icons-fontSize;
+            }
+        }
+
+        &--sub {
+            @include pinkButton();
+            height: 30px;
+            font-size: 0.8em;
+            margin: auto 20px;
+            display: none;
+        }
+
+        &--burger {
+            position: absolute;
+            top: 50%;
+            left: 5%;
+            color: rgb(0, 0, 0);
+            transform: translateY(-50%);
+            outline: none;
+
+            & i {
+                font-size: $icons-fontSize;
+            }
+
+        }
+
+        &--submit {
+            color: rbg(0, 0, 0);
+            transform: translateY(-50px);
+
+            & i {
+                font-size: $icons-fontSize;
+            }
+        }
+
+    }
+
+    &__searchForm {
+        width: 23vh;
+        height: 5vh;
+        position: absolute;
+        top: calc(50% - 2.5vh);
+        right: calc(5% - 5px);
+        transform: translateX(+250px);
+        border: 3px solid $elements-color;
+        border-radius: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-right: 5px;
+        transition: .3s;
+        transition-delay: .3s;
+    }
+
+    &__searchInput {
+        @include basicButton();
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+        padding: 3px 10px;
+        outline: none;
+    }
+
+
+}
+
+// @media screen and (min-height : 310px) and (max-height : 480px) and (max-width : 768px) and (orientation: landscape) {
+//     .nav {
+//         height: 15vh;
+
+//         &__list {
+//             transform: translateX(-800px);
+//         }
+
+//         &__searchForm {
+//             width: 40vh;
+//             height: 9vh;
+//             top: calc(50% - 4.5vh)
+//         }
+
+
+//     }
+// }

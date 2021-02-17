@@ -1,0 +1,61 @@
+.footer {
+    height: 20vh;
+    width: 100%;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.media {
+    height: 17vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+        color: $brightFont-color;
+        font-family: $second-font;
+        margin-bottom: 10px;
+        font-weight: normal;
+    }
+
+    &__itemList {
+        flex-basis: content;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+    }
+
+    &__item {
+        font-size: $icons-fontSize;
+        color: $elements-color;
+        margin: 0 5px;
+    }
+}
+
+.signature {
+    width: 100%;
+    text-align: center;
+
+    &__author {
+        font-size: .6em;
+        font-family: $second-font;
+        font-weight: lighter;
+        color: $second-backgroundColor;
+    }
+}
+
+@media screen and (min-height : 310px) and (max-height : 480px) and (max-width : 768px) and (orientation: landscape) {
+
+    .footer {
+        height: fit-content;
+    }
+
+    .media {
+        height: 25vh;
+    }
+
+}

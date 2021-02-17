@@ -1,0 +1,19 @@
+.visible {
+    @include coverElement(0px);
+    //animation: menuSliding .3s .3s ease-out both alternate;
+}
+
+.closed {
+    display: none;
+}
+
+
+// @keyframes menuSliding {
+//     from {
+//         transform: translateX(-300px);
+//     }
+
+//     to {
+//         transform: translateX(0);
+//     }
+// }

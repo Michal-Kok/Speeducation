@@ -1,0 +1,33 @@
+$icons-fontSize: 1.5em;
+$elements-color: rgb(235, 39, 72);
+$second-backgroundColor: rgb(59, 55, 55);
+$brightFont-color: rgb(248, 246, 246);
+$main-font: 'Arimo',
+sans-serif;
+$second-font:'Nunito Sans',
+sans-serif;
+
+@mixin basicButton() {
+    background-color: transparent;
+    border: none;
+}
+
+@mixin pinkButton() {
+    background-color: $elements-color;
+    border-radius: 50px;
+    padding: 10px 15px;
+    font-weight: bold;
+    font-family: $main-font;
+    color: white;
+    font-family: $main-font;
+}
+
+@mixin coverElement($translationValue) {
+    transform: translateX($translationValue);
+}
+
+@mixin handphoneLandscape {
+    @media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
+        @content;
+    }
+}

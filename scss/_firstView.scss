@@ -1,0 +1,58 @@
+.firstView {
+    height: 90vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    margin-top: 10vh;
+    overflow-x: hidden;
+
+    &__svgCornerContainer {
+        position: absolute;
+        background-color: $brightFont-color;
+        top: 0;
+        right: 0;
+        width: 10vh;
+        height: 10vh;
+    }
+
+    &__logoContainer {
+        width: 50%;
+        height: fit-content;
+    }
+
+    &__header {
+        color: $brightFont-color;
+        font-size: 1.8em;
+        text-align: center;
+        font-family: $main-font;
+    }
+
+    &__button {
+        @include basicButton();
+        @include pinkButton();
+    }
+
+    // &__optLogo {
+    //     display: none;
+    // }
+}
+
+
+// @media screen and (min-height : 310px) and (max-height : 480px) and (max-width : 768px) and (orientation: landscape) {
+
+//     .firstView {
+//         height: 185vh;
+//         margin-top: 15vh;
+
+//         &__logoContainer {
+//             width: 60%;
+//             margin-bottom: 20vh;
+//             margin-top: 5vh;
+//         }
+//     }
+
+// }
