@@ -25,6 +25,7 @@
     &__item {
         font-family: 'Roboto', sans-serif;
         font-weight: bold;
+        cursor: pointer;
     }
 
     &__button {
@@ -66,7 +67,7 @@
 
         &--submit {
             color: rbg(0, 0, 0);
-            transform: translateY(-50px);
+            transform: translateY(-100px);
 
             & i {
                 font-size: $icons-fontSize;
@@ -139,7 +140,7 @@
     }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
     .nav {
 
         &__list {
@@ -149,11 +150,81 @@
             font-size: 1.2em;
         }
 
+        &__item {
+            font-size: 1.2em;
+        }
+
+        &__searchInput {
+            font-size: 1em;
+        }
+
         &__button {
+
+            &--search {
+
+                & i {
+                    font-size: 1.8em;
+                }
+            }
+
+            &--submit {
+
+                & i {
+                    font-size: 1.8em;
+                }
+            }
 
             &--burger {
                 display: none;
             }
+        }
+    }
+}
+
+@media screen and (min-width: 1281px) {
+
+    .nav {
+
+        &__list {
+            transform: translateX(0px);
+            width: 45%;
+            padding-left: 15%;
+            font-size: 1.2em;
+        }
+
+        &__item {
+            font-size: 1em;
+        }
+
+        &__button {
+
+            &--search {
+
+                & i {
+                    font-size: 2em;
+                }
+            }
+
+            &--submit {
+
+                & i {
+                    font-size: 2em;
+                }
+            }
+
+            &--burger {
+                display: none;
+            }
+        }
+
+        &__searchForm {
+            transform: translateX(600px);
+            height: 6vh;
+            max-height: 50px;
+        }
+
+        &__searchInput {
+            font-size: 1.2em;
         }
     }
 }
