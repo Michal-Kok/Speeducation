@@ -10,6 +10,7 @@ sans-serif;
 @mixin basicButton() {
     background-color: transparent;
     border: none;
+    cursor: pointer;
 }
 
 @mixin pinkButton() {
@@ -26,8 +27,8 @@ sans-serif;
     transform: translateX($translationValue);
 }
 
-@mixin handphoneLandscape {
-    @media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
-        @content;
-    }
-}
+// @mixin handphoneLandscape {
+//     @media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
+//         @content;
+//     }
+// }
