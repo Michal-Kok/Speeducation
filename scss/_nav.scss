@@ -122,7 +122,7 @@
     }
 }
 
-@media screen and (min-height : 481px) and (max-height : 769px) and (min-width : 429px) and (max-width : 1024px) {
+@media screen and (min-height : 481px) and (min-width : 429px) {
     .nav {
 
         &__list {
@@ -136,5 +136,24 @@
             transform: translateX(+300px);
         }
 
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .nav {
+
+        &__list {
+            transform: translateX(0px);
+            width: 45%;
+            padding-left: 15%;
+            font-size: 1.2em;
+        }
+
+        &__button {
+
+            &--burger {
+                display: none;
+            }
+        }
     }
 }
