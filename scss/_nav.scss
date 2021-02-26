@@ -1,5 +1,5 @@
 .nav {
-    height: 10vh;
+    height: 10%;
     width: 100vw;
     background-color: #fff;
     position: fixed;
@@ -107,7 +107,7 @@
 
 @media screen and (min-height : 310px) and (max-height : 480px) and (max-width : 768px) and (orientation: landscape) {
     .nav {
-        height: 15vh;
+        height: 15%;
 
         &__list {
             transform: translateX(-800px);
