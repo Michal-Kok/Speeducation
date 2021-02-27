@@ -13,8 +13,21 @@ const wrongEmailMsg = "E-mail is not correct.";
 const wrongPasswordMsg = "Password is too short.";
 const wrongSecondPasswordMsg = "Passwords don't match."
 const positiveSubmitMsg = "You're signed it. Check your inbox."
-
+// 5e2e396d-10d8-4948-99e0-52755b2b8425
 // functions
+const sendEmail = () => {
+    smtp.UseDefaultCredentials = false;
+    Email.send({
+        SecureToken : "5e2e396d-10d8-4948-99e0-52755b2b8425",
+        To : 'pukkix17@gmail.com',
+        From : "programistadobry@gmail.com",
+        Subject : "This is the subject",
+        Body : "And this is the body"
+    }).then(
+      message => alert(message)
+    );
+}
+
 const clearPopUpInputs = () => {
     popUpInputs.forEach(input => {
         input.value = '';
@@ -66,6 +79,7 @@ const handleSumbit = (e) => {
             if (password === password2) {
                 popUpsubmitMsg.textContent = positiveSubmitMsg;
                 clearPopUpInputs();
+                sendEmail();
             } else throwSubmitError(2);
         } else throwSubmitError(1);
     } else throwSubmitError(0);
