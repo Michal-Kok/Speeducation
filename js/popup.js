@@ -22,7 +22,7 @@ const sendEmail = () => {
         From: "programistadobry@gmail.com",
         Subject: "Newsletter",
         Body: `<h3>Hello!</h3> I'm happy to meet you. It's my fictional adress. BUT i'm SURE that your biggest dream is to contact creator of this site. Use my GitHub's e-mail instead. Regards.`,
-    }).then(msg => alert(msg));
+    }).then(msg => console.log(msg));
 }
 
 const clearPopUpInputs = () => {
