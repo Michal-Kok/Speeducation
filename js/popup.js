@@ -13,19 +13,16 @@ const wrongEmailMsg = "E-mail is not correct.";
 const wrongPasswordMsg = "Password is too short.";
 const wrongSecondPasswordMsg = "Passwords don't match."
 const positiveSubmitMsg = "You're signed it. Check your inbox."
-// 5e2e396d-10d8-4948-99e0-52755b2b8425
+
 // functions
 const sendEmail = () => {
-    smtp.UseDefaultCredentials = false;
-    Email.send({
-        SecureToken : "5e2e396d-10d8-4948-99e0-52755b2b8425",
-        To : 'pukkix17@gmail.com',
-        From : "programistadobry@gmail.com",
-        Subject : "This is the subject",
-        Body : "And this is the body"
-    }).then(
-      message => alert(message)
-    );
+    window.Email.send({
+        SecureToken: "b287bc51-c2cf-4d71-9e44-d9df4af4ce97",
+        To: email,
+        From: "programistadobry@gmail.com",
+        Subject: "Newsletter",
+        Body: `<h3>Hello!</h3> I'm happy to meet you. It's my fictional adress. BUT i'm SURE that your biggest dream is to contact creator of this site. Use my GitHub's e-mail instead. Regards.`,
+    }).then(msg => alert(msg));
 }
 
 const clearPopUpInputs = () => {

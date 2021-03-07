@@ -9,7 +9,7 @@
   },
   "author": "Michal Kok",
   "license": "ISC",
-  "dependencies": {}
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
 }
-
-
